@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICST | International Campus Of Science And Technology</title>
+   
+    <link rel="icon" type="image/png" href="icst_university_park_cover-removebg-preview.png" />
+
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+     
+        body {
+            font-family: 'Inter', sans-serif; 
+            line-height: 1.6;
+            background: #f9f9f9; 
+            color: #0c0101; 
+            padding-top: 76px; 
+        }
+
+        .navbar-brand .logo {
+            height: 100px; 
+            border-radius: 8px; 
+        }
+
+        .hero {
+            
+            background: url('https://lh3.googleusercontent.com/-X5EyOY7Z5ZQ/Zj94FPNh48I/AAAAAAAE49g/hkM3tsy4e08PrXDpXrAwSArFymNicXzoACNcBGAsYHQ/s1600/1000233846.jpg') no-repeat center center/cover;
+            height: 400px;
+            position: relative; 
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(62, 62, 62, 0.364); 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero-text {
+            border-radius: 8px;
+            padding: 2rem;
+            color: white;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #012145; 
+            border-bottom: 2px solid #e9ecef; 
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .card {
+            border-radius: 0.5rem; 
+            border: none; 
+            box-shadow: 0 0.125rem 0.25rem rgba(245, 245, 245, 0.075); 
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px); 
+        }
+
+        .card-img-top {
+           
+            border-top-left-radius: calc(0.5rem - 1px);
+            border-top-right-radius: calc(0.5rem - 1px);
+        }
+
+        .course-card .card-body {
+            min-height: 120px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidebar {
+            background-color: #ffffff;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.125rem 0.25rem rgb(27, 13, 13);
+            padding: 1.5rem;
+        }
+
+        .filter label {
+            display: block; 
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+
+        .filter input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+
+        .btn-primary {
+            background-color: #002147; 
+            border-color: #002147;
+            border-radius: 0.3rem; 
+        }
+
+        .btn-primary:hover {
+            background-color: #003366; 
+            border-color: #003366;
+        }
+
+        
+        .contact-icon {
+            font-size: 1.8rem;
+            color: #002147;
+            margin-bottom: 0.5rem;
+        }
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: #01254e; 
+            color: white;
+            padding: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+              
+                <img src="WhatsApp_Image_2025-06-27_at_00.32.28-removebg-preview.png" alt="ICST Logo" class="logo img-fluid rounded">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <section class="hero d-flex align-items-center justify-content-center" id="home">
+        <div class="hero-overlay">
+            <div class="hero-text text-white">
+                <h1 class="display-4 fw-bold">Welcome to ICST</h1>
+                <p class="lead mt-3">International Campus of Science and Technology – Future starts here</p>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="section py-5" id="about">
+        <div class="container">
+            <h2 class="section-title mb-4">About ICST</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    
+                    <img src="isss.jpg" alt="ICST Campus" class="img-fluid rounded shadow-sm">
+                </div>
+                <div class="col-md-6">
+                    <p class="lead">
+                        ICST’s Founding Vision
+ICST was founded to make higher education a powerful tool for breaking socio-economic barriers. Its mission is to provide accessible, job-oriented education to students from all backgrounds, particularly those with limited financial means, while promoting inclusivity and social responsibility.
+                    </p>
+                    <p>
+                        Message from the Chairman – Eng. M.H.A HIRAS
+Welcome to ICST University Park—a symbol of learning, innovation, and opportunity. Guided by our founder’s vision, we aim to build a vibrant academic community that values creativity, diversity, and personal growth. Together with our dedicated faculty, we are committed to fostering an enriching student experience that leaves a lasting impact on Sri Lanka’s educational landscape.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section py-5 bg-light" id="courses">
+        <div class="container">
+            <h2 class="section-title mb-4">Featured Courses</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        
+                        <img src="https://assets-global.website-files.com/5f2b1efb0f881760ffdc5c96/65293ad388e7f519253c23b6_cuu_mexygabriel_design_banner-scaled.jpg" class="card-img-top" alt="BAIT">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                            <h5 class="card-title text-center">BAIT</h5>
+                            <p class="card-text text-muted">Intake: 2025</p>
+                            
+                            <a href="https://forms.gle/hCgEYqz1Dxx5a6QX9" class="btn btn-primary mt-auto" target="_blank">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                       
+                        <img src="https://www.909it.com.au/wp-content/uploads/2023/05/Cloud-Solution-Provider-Company.jpg" class="card-img-top" alt="HDIT">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                            <h5 class="card-title text-center">HDIT</h5>
+                            <p class="card-text text-muted">Intake: 2025</p>
+                            
+                            <a href="https://forms.gle/CwpNgiVQooJHfwd16" class="btn btn-primary mt-auto" target="_blank">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                      
+                        <img src="https://www.informaticsinc.com/application/files/9015/1622/6054/howdesigningyourarchitectureblastislikedesigningabuilding-450.jpg" class="card-img-top" alt="HDQS">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                            <h5 class="card-title text-center">HDQS</h5>
+                            <p class="card-text text-muted">Intake: 2025</p>
+                           
+                            <a href="https://forms.gle/uZoFrRP46FF1R2g96" class="btn btn-primary mt-auto" target="_blank">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                       
+                        <img src="https://www.educationalknowhow.com/wp-content/uploads/2020/02/ACCA-1024x576.jpg" class="card-img-top" alt="ACCA">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                            <h5 class="card-title text-center">ACCA</h5>
+                            <p class="card-text text-muted">Intake: 2025</p>
+                            
+                            <a href="https://forms.gle/s3KeM9p5wqiN53DA7[]" class="btn btn-primary mt-auto" target="_blank">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section py-5" id="contact">
+        <div class="container">
+            <h2 class="section-title mb-4">Discover Our Programs & Contact Us</h2>
+            <div class="row">
+               
+                <div class="col-lg-3 mb-4">
+                    <div class="sidebar p-4 shadow-sm">
+                        <h4 class="mb-3 text-primary">Find Your Course</h4>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control rounded-start" placeholder="Search courses..." aria-label="Search courses">
+                            <button class="btn btn-primary rounded-end" type="button">Search</button>
+                        </div>
+                        <h5 class="mt-4 mb-3 text-secondary">Filter By Category</h5>
+                        <div class="filter">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check1">
+                                <label class="form-check-label" for="check1">Accounting and Finance</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check2">
+                                <label class="form-check-label" for="check2">Education Management and Leadership</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check3">
+                                <label class="form-check-label" for="check3">Engineering</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check4">
+                                <label class="form-check-label" for="check4">Health Care</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check5">
+                                <label class="form-check-label" for="check5">Human Resource Management</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check6">
+                                <label class="form-check-label" for="check6">Information Technology</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check7">
+                                <label class="form-check-label" for="check7">Logistics and Supply Chain Management</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check8">
+                                <label class="form-check-label" for="check8">Project Management</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check9">
+                                <label class="form-check-label" for="check9">Tourism and Hospitality Management</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <div class="col-lg-9">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card h-100 course-card">
+                                <img src="https://th.bing.com/th/id/OIP.KI-jNjQX46m88ORMXg5rWQHaE1?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2" class="card-img-top" alt="Degree in Applied IT">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Degree in Applied Engineering</h5>
+                                    <a href="https://forms.gle/YbgMd6BxmkuLKa7z7" class="btn btn-outline-secondary mt-2">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 course-card">
+                                <img src="https://adjlegal.com/wp-content/uploads/2016/02/engineering-pictures-12.jpg" class="card-img-top" alt="Level 3 Diploma in Engineering">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Level 3 Diploma in Engineering</h5>
+                                    <a href="https://forms.gle/YbgMd6BxmkuLKa7z7" class="btn btn-outline-secondary mt-2">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 course-card">
+                                <img src="https://www.datocms-assets.com/64859/1706310399-principles-of-management-key-features-explained-1706310399508.png?auto=format&fit=max&w=1200" class="card-img-top" alt="Diploma in Management">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Diploma in Management</h5>
+                                    <a href="https://forms.gle/YbgMd6BxmkuLKa7z7" class="btn btn-outline-secondary mt-2">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 course-card">
+                                <img src="https://th.bing.com/th/id/R.78c21b12c9714f5338e019ca7ef82260?rik=2WJuW4h62aSUPw&pid=ImgRaw&r=0" class="card-img-top" alt="Diploma in Tourism">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Diploma in Tourism</h5>
+                                    <a href="https://forms.gle/YbgMd6BxmkuLKa7z7" class="btn btn-outline-secondary mt-2">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 course-card">
+                                <img src="https://th.bing.com/th/id/OIP._Kd2sa-sUYnqMZfG3m-N9gHaE0?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2" class="card-img-top" alt="Diploma in Logistics">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Diploma in Logistics</h5>
+                                    <a href="https://forms.gle/YbgMd6BxmkuLKa7z7" class="btn btn-outline-secondary mt-2">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 course-card">
+                                <img src="https://www.intelligenthq.com/wp-content/uploads/2013/11/Project-Management-IntelligentHQ1.jpg" class="card-img-top" alt="Diploma in Project Mgmt">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Diploma in Project Mgmt</h5>
+                                    <a href="https://forms.gle/YbgMd6BxmkuLKa7z7" class="btn btn-outline-secondary mt-2">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 course-card">
+                                <img src="https://th.bing.com/th/id/OIP.rcXGmK2Z4pOKI_RAez9vMgHaE8?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2" class="card-img-top" alt="Diploma in HR">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Diploma in HR</h5>
+                                    <a href="https://forms.gle/YbgMd6BxmkuLKa7z7" class="btn btn-outline-secondary mt-2">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 course-card">
+                                <img src="https://gulfportal.ae/storage/images/blogs/blogs-1660500434.jpg" class="card-img-top" alt="Diploma in Accounting">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Diploma in Accounting</h5>
+                                    <a href="https://forms.gle/YbgMd6BxmkuLKa7z7" class="btn btn-outline-secondary mt-2">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section py-5 bg-light" id="get-in-touch">
+        <div class="container">
+            <h2 class="section-title mb-4">Get in Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card p-4 shadow-lg border-0 text-center">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary mb-4">Contact Information</h3>
+                            <div class="contact-info mb-3">
+                                <p><i class="bi bi-geo-alt-fill contact-icon"></i><br> ICST, University Park</p>
+                                <p><i class="bi bi-telephone-fill contact-icon"></i><br> +94 74 3444 444</p>
+                                <p><i class="bi bi-envelope-fill contact-icon"></i><br> admissions@icst.edu.lk</p>
+                            </div>
+                            <a href="https://www.google.com/maps/search/?api=1&query=ICST" target="_blank" class="btn btn-outline-primary mt-3">
+                                <i class="bi bi-map-fill me-2"></i>View on Map
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <footer class="text-center py-4 bg-dark text-white shadow-lg">
+        <div class="container">
+            <p class="mb-0">International Campus of Science and Technology</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
